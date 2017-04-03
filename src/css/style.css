@@ -33,7 +33,9 @@ a { color: #444e67 }
 a:hover { color: #48cfad }
 p { line-height: 22px }
 /*header*/
-.head-section { border-bottom: 1px solid #eee }
+.head-section {
+background-color: #2C3E50;
+opacity: 80%;}
 .head-section .navbar {
     margin-bottom: 0;
 }
@@ -43,7 +45,7 @@ p { line-height: 22px }
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 9px;
     padding: 0;
 }
 .navbar-brand span { color: #48cfad }
@@ -55,7 +57,7 @@ p { line-height: 22px }
 .head-section .navbar-default { background-color: #fff }
 .head-section .nav li a,
 .head-section .nav li.active ul.dropdown-menu li a {
-    color: #999;
+    color: #fff;
     font-size: 14px;
     font-weight: 300;
     background: none;
@@ -88,10 +90,11 @@ ul.dropdown-menu { border: none }
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-.head-section .navbar { min-height: 85px }
+.head-section .navbar { min-height: 28px ;
+background-color: #2C3E50}
 .head-section .navbar-nav > li {
-    padding-bottom: 25px;
-    padding-top: 30px;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
 .head-section ul.navbar-nav li:last-child() { margin-left: 10px !important }
 .head-section  .navbar-nav > li > a {
@@ -131,7 +134,7 @@ ul.dropdown-menu { border: none }
 .head-section .nav li .dropdown-menu li a {
     line-height: 30px;
     padding: 3px 12px;
-    border-bottom: 1px solid #F3E8E8;
+    border-bottom: 1px solid #2c3e50;
 }
 /*search*/
 .search {
@@ -147,7 +150,7 @@ ul.dropdown-menu { border: none }
     transition: all .3s ease;
     border: 1px solid #fff;
     box-shadow: none;
-    background: url("../img/search-icon.jpg") no-repeat 10px 8px;
+    background: url("../img/search-icon.png") no-repeat 10px 8px;
     padding: 0 5px 0 35px;
     color: #fff;
     margin-left: 10px;
@@ -890,7 +893,7 @@ section.contact-infos {
     border-radius: 50px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    margin-left: 40%;
+    margin-left: 38%;
     margin-top: -25px;
 }
 .content h3,
@@ -1398,7 +1401,7 @@ ul.page-footer-list li i { padding-right: 10px }
     padding: 5px 21px 20px;
 }
 .h-service-content a {
-    color: #e74c3c;
+    color: #34495e;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -1783,7 +1786,7 @@ ul#filters > .active > span {
     border: 1px solid #d9d9d9;
 }
 .input-group-addon {
-    border: border: 1px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
     border-radius: 1px;
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
@@ -2965,3 +2968,10 @@ div.header h3{
     left:50%;
     top:-4px;
 }
+.padding-T-30{padding-top:30px;}
+.text-primary-color{color:#48cfad;
+font-weight: 400;}
+.copyright p{ text-align: center;}
+/*
+.da-slide-toleft .da-img{left:50%;
+}*/
