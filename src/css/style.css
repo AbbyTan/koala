@@ -45,7 +45,7 @@ opacity: 80%;}
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
-    margin-top: 9px;
+    margin-top: 6px;
     padding: 0;
 }
 .navbar-brand span { color: #48cfad }
@@ -2972,6 +2972,83 @@ div.header h3{
 .text-primary-color{color:#48cfad;
 font-weight: 400;}
 .copyright p{ text-align: center;}
+.margin-top-30{margin-top: 30px;}
+.margin-top-60{margin-top:60px;}
+.round-fifty-product {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    margin-left: 44%;
+    margin-top: -25px;
+}
+.f-box {
+    background: #48cfad;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-height: 210px;
+    margin-bottom: 20px;
+    transition-duration: 500ms;
+    transition-property: width, background;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 500ms;
+    -webkit-transition-property: width, background;
+    -webkit-transition-timing-function: ease;
+}
+
+.f-box i{
+    font-size: 50px;
+    line-height: normal;
+    margin-top: 40px;
+    display: block;
+    color: #48cfad;
+}
+
+.f-box:hover, .f-box.active {
+    background: #48cfad;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-height: 210px;
+    margin-bottom: 20px;
+    transition-duration: 500ms;
+    transition-property: width, background;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 500ms;
+    -webkit-transition-property: width, background;
+    -webkit-transition-timing-function: ease;
+	cursor: pointer;
+}
+
+.f-box:hover i, .f-box.active i{
+    font-size: 50px;
+    line-height: normal;
+    margin-top: 40px;
+    display: block;
+    color: #fff;
+
+}
+
+.f-box:hover h2, .f-box.active h2{
+    color: #fff;
+}
+
+.f-box h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Fjalla One', sans-serif;
+}
+.product-img img {
+    width: auto;
+	height: 450px;
+   
+	
+	left: 50%;
+	margin-left: -400px;
+	vertical-align: middle;
+}
+
 /*
 .da-slide-toleft .da-img{left:50%;
 }*/
