@@ -22,7 +22,7 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var cache = require('gulp-cache');
 
-var baseDir = './src';
+var baseDir = 'src';
 
 //['./dist/css', './dist/fonts', './dist/js', './dist/images', './dist/*.html']
 var cleanSrc = './dist/*';
@@ -265,10 +265,10 @@ gulp.task('testImagemin', function() {
 gulp.task('serve', function() {
   browserSync({
     server: {
-      baseDir: 'src'
+      baseDir: baseDir
     }
   });
 
-  gulp.watch(['*.html'], {cwd: 'src'}, reload);
+  gulp.watch(['*.html', 'css/**/*.css','js/**/*.js'], {cwd: baseDir}, reload);
 });
 
