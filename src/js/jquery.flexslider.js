@@ -404,7 +404,7 @@
           } else {
             // SMOOTH HEIGHT:
             if (vars.smoothHeight) methods.smoothHeight();
-            slider.newSlides.width(slider.computedW);
+            slider.news.htmllides.width(slider.computedW);
             slider.setProps(slider.computedW, "setTotal");
           }
         }
@@ -653,14 +653,14 @@
           if (type !== "init") slider.container.find('.clone').remove();
           slider.container.append(slider.slides.first().clone().addClass('clone')).prepend(slider.slides.last().clone().addClass('clone'));
         }
-        slider.newSlides = $(vars.selector, slider);
+        slider.news.htmllides = $(vars.selector, slider);
 
         sliderOffset = (reverse) ? slider.count - 1 - slider.currentSlide + slider.cloneOffset : slider.currentSlide + slider.cloneOffset;
         // VERTICAL:
         if (vertical && !carousel) {
           slider.container.height((slider.count + slider.cloneCount) * 200 + "%").css("position", "absolute").width("100%");
           setTimeout(function(){
-            slider.newSlides.css({"display": "block"});
+            slider.news.htmllides.css({"display": "block"});
             slider.doMath();
             slider.viewport.height(slider.h);
             slider.setProps(sliderOffset * slider.h, "init");
@@ -670,7 +670,7 @@
           slider.setProps(sliderOffset * slider.computedW, "init");
           setTimeout(function(){
             slider.doMath();
-            slider.newSlides.css({"width": slider.computedW, "float": "left", "display": "block"});
+            slider.news.htmllides.css({"width": slider.computedW, "float": "left", "display": "block"});
             // SMOOTH HEIGHT:
             if (vars.smoothHeight) methods.smoothHeight();
           }, (type === "init") ? 100 : 0);
